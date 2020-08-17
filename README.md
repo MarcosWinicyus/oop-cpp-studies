@@ -5,4 +5,8 @@
 
 ## 📋 License
 
+<<<<<<< HEAD
     This project is licensed under the MIT License
+=======
+    This project is licensed under the MIT License.
+>>>>>>> acd11854440a6a390b405139f25e22c3ab7ec158
