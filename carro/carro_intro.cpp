@@ -55,7 +55,7 @@ class Carro{
 };
 int main(){
   
-    Carro meuHyundai("HB20", "OMX-3760", "Vermelho");
+    Carro meuHyundai("HB20", "OSS-2453", "Vermelho");
 
     meuHyundai.ligarCarro();
     meuToyota.curvarEsquerda();
