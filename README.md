@@ -5,4 +5,4 @@
 
 ## 📋 License
 
-    This project is licensed under the MIT License - see the [license](https://github.com/MarcosWinicyus/poo-cpp-studies/blob/master/LICENSE.md) file for details
+    This project is licensed under the MIT License.
