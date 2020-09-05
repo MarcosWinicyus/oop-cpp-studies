@@ -10,6 +10,8 @@ class Endereco{
         int numero;
         string cep;
     public:
+        Endereco();
+        Endereco(const string logradouro, const string bairro, const string cidade, const string cep, int numero);
         void set_logradouro(const string &);
         void set_bairro(const string &);
         void set_cidade(const string &);

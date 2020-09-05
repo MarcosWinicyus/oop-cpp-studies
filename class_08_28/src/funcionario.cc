@@ -1,6 +1,6 @@
 #include "funcionario.h"
 
-Funcionario::Funcionario(const Endereco & endereco):Pessoa(endereco){
+Funcionario::Funcionario(Endereco *endereco) : Pessoa(endereco){
 
 }
 

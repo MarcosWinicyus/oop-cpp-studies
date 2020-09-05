@@ -5,7 +5,7 @@ class Empresario : public Pessoa{
     private:
         double investimento_inicial;
     public:
-        Empresario(const Endereco &);
+        Empresario(Endereco *endereco);
         void set_investimento(const double &);
         double get_investimento();
 };

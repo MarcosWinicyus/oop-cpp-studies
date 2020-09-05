@@ -1,5 +1,16 @@
 #include "endereco.h"
 
+Endereco::Endereco() {}
+
+Endereco::Endereco(const string logradouro, const string bairro, const string cidade, const string cep, int numero)
+{
+    this->cidade = cidade;
+    this->bairro = bairro;
+    this->logradouro = logradouro;
+    this->cep = cep;
+    this->numero = numero;
+}
+
 void Endereco::set_logradouro(const string &logradouro){
     this->logradouro = logradouro;
 }

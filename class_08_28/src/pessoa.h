@@ -10,20 +10,22 @@ class Pessoa{
         string nome;
         string rg;
         string cpf;
-        Endereco endereco; // composição
+        Endereco* endereco; // composição
         Telefone* telefone; // agregação pode ou não ter um telefone
-        Email** emails; // agregação pode ou não ter multiplos - email
+        Email* email; // agregação pode ou não ter multiplos - email
     public:
-        Pessoa(const Endereco &);
         void set_nome(const string &);
         void set_rg(const string &);
-        void set_endereco(const Endereco &);
+        void set_endereco(Endereco *endereco);
         void set_telefone(Telefone* telefone);
-        void set_emails(Email** email);
+        void set_cpf(const string &cpf);
+        void set_email(Email* email);
         string get_nome();
+        string get_cpf();
         string get_rg();
-        Endereco get_endereco();
-        Email** get_emails();
+        Endereco* get_endereco();
+        Email* get_email();
         Telefone* get_telefone();
+        Pessoa(Endereco *endereco);
 };
 #endif

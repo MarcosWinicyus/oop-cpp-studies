@@ -1,5 +1,12 @@
 #include "telefone.h"
 
+Telefone::Telefone(const string &pais, const string &ddd, const string &numero)
+{
+    this->ddd = ddd;
+    this->pais = pais;
+    this->numero = numero;
+}
+
 void Telefone::set_ddd(const string & ddd){
     this->ddd = ddd;
 }

@@ -5,7 +5,7 @@ class Funcionario : public Pessoa{
     private:
         double salario;
     public:
-        Funcionario(const Endereco &);
+        Funcionario(Endereco *endereco);
         void set_salario(const double &);
         double get_salario();
 };

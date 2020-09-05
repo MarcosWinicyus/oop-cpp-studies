@@ -8,6 +8,7 @@ class Telefone{
         string numero;
         string pais;
     public:
+        Telefone(const string &pais, const string &ddd, const string &numero);
         void set_ddd(const string &);
         void set_numero(const string &);
         void set_pais(const string &);
