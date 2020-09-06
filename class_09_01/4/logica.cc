@@ -74,11 +74,17 @@ void Logica::cases_menu_fornecedor()
             cout << (*it)->get_nome() << endl;
         }
     }
+    case 0:
+    {
+        this->start();
+        break;
+    }
 
     default:
         break;
     }
     this->option = 0;
+    this->start();
 }
 
 Fornecedor *Logica::create_fornecedor()
@@ -152,11 +158,17 @@ void Logica::cases_menu_cliente()
            cout << (*it)->get_nome() <<endl;
         }
     }
+    case 0:
+    {
+        this->start();
+        break;
+    }
 
     default:
         break;
     }
     this->option = 0;
+    this->start();
 }
 
 Cliente *Logica::create_cliente()
@@ -200,6 +212,12 @@ void Logica::menu_empregado(){
         this->initital_menu_empregado();
         this->menu_options_empregado();
     } while (this->option > 0);
+
+    if (option == 0)
+    {
+        this->start();
+    }
+    
 }
 
 void Logica::initital_menu_empregado()
@@ -217,20 +235,28 @@ void Logica::menu_options_empregado()
 {
     switch (this->option)
     {
-    case 1:
+    case 1:{
         this->menu_administrador();
         break;
-
-    case 2:
+    }
+    case 2:{
         this->menu_operario();
         break;
-    case 3:
+    }
+    case 3:{
         this->menu_vendedor();
         break;
+    }
+        
+    case 0:{
+        this->start();
+        break;
+    }
 
     default:
         break;
     }
+    this->start();
 }
 
 // Administrador
@@ -267,11 +293,18 @@ void Logica::cases_menu_administrador()
             cout << (*it)->get_nome() << endl;
         }
     }
+    case 0:
+    {
+        this->menu_empregado();
+        break;
+    }
 
     default:
         break;
     }
     this->option = 0;
+    this->menu_empregado();
+    
 }
 
 Administrador *Logica::create_administrador()
@@ -338,11 +371,17 @@ void Logica::cases_menu_operario()
             cout << (*it)->get_nome() << endl;
         }
     }
+    case 0:
+    {
+        this->menu_empregado();
+        break;
+    }
 
     default:
         break;
     }
     this->option = 0;
+    this->menu_empregado();
 }
 
 Operario *Logica::create_operario()
@@ -414,11 +453,17 @@ void Logica::cases_menu_vendedor()
             cout << (*it)->get_nome() << endl;
         }
     }
+    case 0:
+    {
+        this->menu_empregado();
+        break;
+    }
 
     default:
         break;
     }
     this->option = 0;
+    this->menu_empregado();
 }
 
 Vendedor *Logica::create_vendedor()
