@@ -45,7 +45,7 @@ void Logica::menu_fornecedor()
 {
     cout << "-----------------------MENU FORNECEDOR------------------" << endl;
     cout << "Opcao 1: Adicionar um fornecedor" << endl;
-    cout << "Opcao 2: Pesquisar um fornecedor" << endl;
+    cout << "Opcao 2: Pesquisar um fornecedor - Desabilitado" << endl;
     cout << "Opcao 3: Editar um fornecedor" << endl;
     cout << "Opcao 4: Excluir um fornecedor" << endl;
     cout << "Opcao 5: Listar todos" << endl;
@@ -264,7 +264,7 @@ void Logica::menu_administrador()
 {
     cout << "-----------------------MENU ADMINISTRADOR------------------" << endl;
     cout << "Opcao 1: Adicionar um administrador" << endl;
-    cout << "Opcao 2: Pesquisar um administrador" << endl;
+    cout << "Opcao 2: Pesquisar um administrador - Desabilitado" << endl;
     cout << "Opcao 3: Editar um administrador" << endl;
     cout << "Opcao 4: Excluir um administrador" << endl;
     cout << "Opcao 5: Listar todos" << endl;
@@ -342,7 +342,7 @@ void Logica::menu_operario()
 {
     cout << "-----------------------MENU OPERSRIO------------------" << endl;
     cout << "Opcao 1: Adicionar um operario" << endl;
-    cout << "Opcao 2: Pesquisar um operario" << endl;
+    cout << "Opcao 2: Pesquisar um operario - Desabilitado" << endl;
     cout << "Opcao 3: Editar um operario" << endl;
     cout << "Opcao 4: Excluir um operario" << endl;
     cout << "Opcao 5: Listar todos" << endl;
@@ -424,7 +424,7 @@ void Logica::menu_vendedor()
 {
     cout << "-----------------------MENU VENDEDOR------------------" << endl;
     cout << "Opcao 1: Adicionar um vendedor" << endl;
-    cout << "Opcao 2: Pesquisar um vendedor" << endl;
+    cout << "Opcao 2: Pesquisar um vendedor - Desabilitado" << endl;
     cout << "Opcao 3: Editar um vendedor" << endl;
     cout << "Opcao 4: Excluir um vendedor" << endl;
     cout << "Opcao 5: Listar todos" << endl;
